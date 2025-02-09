@@ -102,6 +102,7 @@ def _msg_html(command: str, results: list):
             background: #ffffff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             font-family: Arial, sans-serif;
+            color: rgba(0, 0, 0, 0.87);
         ">
             {command_html}
             <div style="margin-left: 0.5em;">
