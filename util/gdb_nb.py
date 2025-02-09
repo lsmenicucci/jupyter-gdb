@@ -149,6 +149,7 @@ def _source_html(source_content: str, file_path: str, function_name: str, line_n
             display: flex;
             border-bottom: 1px solid #e0e0e0;
             padding: 0.25em;
+            color: rgba(0, 0, 0, 0.87);
             font-family: monospace;">
             <span style="flex: 1;">{file_path}</span>
             <span>fn: {function_name} @ line: {line_number}</span>
