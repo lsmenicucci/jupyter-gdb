@@ -165,7 +165,8 @@ def _source_html(source_content: str, file_path: str, function_name: str, line_n
                 background: #fafafa;
                 font-family: Arial, sans-serif;
                 font-size: 0.8em;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                color: rgba(0, 0, 0, 0.87);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             ">
                 {info_html}
                 {source_html}
