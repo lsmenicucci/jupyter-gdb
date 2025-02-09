@@ -46,7 +46,11 @@ def _msg_html(command: str, results: list):
         msg = result.get("message", None)
         if msg is not None:
             msg_html = f"""
-                <div style="font-size: 12px; margin-bottom: 0.25em;">
+                <div style="
+                    font-size: 12px;
+                    margin-bottom: 0.25em;
+                    color: rgba(0, 0, 0, 0.87);
+                    ">
                     {msg}
                 </div>
             """
