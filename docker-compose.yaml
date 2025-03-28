@@ -1,0 +1,9 @@
+services:
+  jupyter:
+    build: .
+    container_name: jupyter
+    ports:
+      - "8888:8888"  # Host:Container port mapping
+    volumes:
+      - ./:/workspace  # Mount current dir to /workspace
+    working_dir: /workspace

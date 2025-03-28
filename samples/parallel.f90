@@ -3,7 +3,7 @@ program parallel
     implicit none
     integer :: size, rank, ierr 
     integer process_Rank, size_Of_Cluster, ierror
-    integer, parameter :: n
+    integer, parameter :: n = 10
     real :: x(n)
     integer :: i
 
@@ -24,7 +24,7 @@ program parallel
     end if
 
     ! Sync all ranks
-    call MPI_BARRIER(MPI_COMM_WORLD)
+    call MPI_BARRIER(MPI_COMM_WORLD, ierror)
 
     print *, rank, x
     
